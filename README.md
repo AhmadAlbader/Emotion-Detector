@@ -1,4 +1,4 @@
-# Emotion Detector
+# Final Project - Emotion Detector
 
 Final project: an AI-based web application that detects anger, disgust, fear,
 joy, and sadness using the Watson NLP emotion model and Flask.
