@@ -18,6 +18,7 @@ def render_index_page():
 
 @app.route("/emotionDetector")
 def sent_analyzer():
+    """Analyze submitted text and return the detected emotion summary."""
     text_to_analyze = request.args.get('textToAnalyze')
 
     if not text_to_analyze or text_to_analyze.strip() == "":
@@ -35,5 +36,6 @@ def sent_analyzer():
         f"The dominant emotion is {response['dominant_emotion']}."
     )
 
-    if __name__ == "__main__":
-        app.run(host="0.0.0.0", port=5000)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
